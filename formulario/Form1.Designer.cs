@@ -59,6 +59,8 @@
             this.rdbFame = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
             this.rdbOutros = new System.Windows.Forms.RadioButton();
+            this.cmbCivil = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -242,6 +244,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.cmbCivil);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.txtBairro);
             this.panel2.Controls.Add(this.label9);
@@ -272,7 +276,7 @@
             this.txtBairro.MaxLength = 30;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(122, 20);
-            this.txtBairro.TabIndex = 10;
+            this.txtBairro.TabIndex = 11;
             this.txtBairro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBairro_KeyPress);
             // 
             // label9
@@ -304,11 +308,11 @@
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(251, 30);
+            this.txtCidade.Location = new System.Drawing.Point(251, 29);
             this.txtCidade.MaxLength = 30;
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(122, 20);
-            this.txtCidade.TabIndex = 7;
+            this.txtCidade.TabIndex = 8;
             this.txtCidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCidade_KeyPress);
             // 
             // txtEndereco
@@ -317,14 +321,14 @@
             this.txtEndereco.MaxLength = 40;
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(155, 20);
-            this.txtEndereco.TabIndex = 8;
+            this.txtEndereco.TabIndex = 9;
             // 
             // txtN
             // 
             this.txtN.Location = new System.Drawing.Point(175, 82);
             this.txtN.Name = "txtN";
             this.txtN.Size = new System.Drawing.Size(52, 20);
-            this.txtN.TabIndex = 9;
+            this.txtN.TabIndex = 10;
             this.txtN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtN_KeyPress);
             // 
             // panel3
@@ -342,7 +346,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(14, 20);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(145, 41);
-            this.btnSalvar.TabIndex = 11;
+            this.btnSalvar.TabIndex = 12;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -352,7 +356,7 @@
             this.bntCancelar.Location = new System.Drawing.Point(228, 20);
             this.bntCancelar.Name = "bntCancelar";
             this.bntCancelar.Size = new System.Drawing.Size(145, 41);
-            this.bntCancelar.TabIndex = 12;
+            this.bntCancelar.TabIndex = 13;
             this.bntCancelar.Text = "Cancelar";
             this.bntCancelar.UseVisualStyleBackColor = true;
             this.bntCancelar.Click += new System.EventHandler(this.bntCancelar_Click);
@@ -398,6 +402,28 @@
             this.rdbOutros.TabStop = true;
             this.rdbOutros.Text = "Outros";
             this.rdbOutros.UseVisualStyleBackColor = true;
+            // 
+            // cmbCivil
+            // 
+            this.cmbCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCivil.FormattingEnabled = true;
+            this.cmbCivil.Items.AddRange(new object[] {
+            "Solteiro/a ",
+            "Casado/a",
+            "Viuvo/a"});
+            this.cmbCivil.Location = new System.Drawing.Point(141, 29);
+            this.cmbCivil.Name = "cmbCivil";
+            this.cmbCivil.Size = new System.Drawing.Size(104, 21);
+            this.cmbCivil.TabIndex = 7;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(143, 13);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(61, 13);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "Estado civil";
             // 
             // Form1
             // 
@@ -454,6 +480,8 @@
         private System.Windows.Forms.RadioButton rdbOutros;
         private System.Windows.Forms.RadioButton rdbFame;
         private System.Windows.Forms.RadioButton rdbMasc;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cmbCivil;
     }
 }
 

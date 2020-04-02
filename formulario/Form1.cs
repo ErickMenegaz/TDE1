@@ -25,6 +25,7 @@ namespace formulario
             mskCPF.Text = "";
             mskCelular.Text = "";
             cmbEstado.SelectedIndex = -1;
+            cmbCivil.SelectedIndex = -1;
             txtCidade.Text = "";
             txtEndereco.Text = "";
             txtN.Text = "";
@@ -41,6 +42,7 @@ namespace formulario
             string cpf = mskCPF.Text;
             string celular = mskCelular.Text;
             string estado = cmbEstado.GetItemText(cmbEstado.SelectedItem);
+            string civil = cmbCivil.GetItemText(cmbCivil.SelectedItem);
             string cidade = txtCidade.Text;
             string endereço = txtEndereco.Text;
             string n = txtN.Text;
@@ -62,18 +64,19 @@ namespace formulario
                 }
             }
 
-            MessageBox.Show("Nome: " + nome + 
-                            ", Sobrenome: " + sobrenome +
-                            ", E-mail: " + email +
-                            ", Data: " + data +
-                            ", CPF: " + cpf +
-                            ", Celular: " + celular +
-                            ", Sexo: " + genero + 
-                            ", Estado: " + estado +
-                            ", Cidade: " + cidade +
-                            ", Endereço: " + endereço +
-                            ", N°: " + n +
-                            ", Bairro:" + bairro);
+            MessageBox.Show("Nome: " + nome + "\n" +
+                            "Sobrenome: " + sobrenome + "\n" +
+                            "E-mail: " + email + "\n" +
+                            "Data: " + data + "\n" +
+                            "CPF: " + cpf + "\n" +
+                            "Celular: " + celular + "\n" +
+                            "Sexo: " + genero + "\n" +
+                            "Estado: " + estado + "\n" +
+                            "Estado Civil: " + civil + "\n" +
+                            "Cidade: " + cidade + "\n" +
+                            "Endereço: " + endereço + "\n" +
+                            "N°: " + n + "\n" +
+                            "Bairro:" + bairro + "\n" );
 
             txtNome.Text = "";
             txtSobrenome.Text = "";
@@ -82,6 +85,7 @@ namespace formulario
             mskCPF.Text = "";
             mskCelular.Text = "";
             cmbEstado.SelectedIndex = -1;
+            cmbCivil.SelectedIndex = -1;
             txtCidade.Text = "";
             txtEndereco.Text = "";
             txtN.Text = "";

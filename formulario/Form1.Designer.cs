@@ -55,6 +55,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.bntCancelar = new System.Windows.Forms.Button();
+            this.rdbMasc = new System.Windows.Forms.RadioButton();
+            this.rdbFame = new System.Windows.Forms.RadioButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.rdbOutros = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -72,7 +76,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 12);
+            this.label1.Location = new System.Drawing.Point(17, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 1;
@@ -106,7 +110,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 56);
+            this.label3.Location = new System.Drawing.Point(17, 56);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 1;
@@ -161,7 +165,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 13);
+            this.label5.Location = new System.Drawing.Point(17, 13);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 13);
             this.label5.TabIndex = 3;
@@ -171,6 +175,10 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.rdbOutros);
+            this.panel1.Controls.Add(this.rdbFame);
+            this.panel1.Controls.Add(this.rdbMasc);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.mskDataNasc);
             this.panel1.Controls.Add(this.mskCPF);
@@ -185,13 +193,13 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(62, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(339, 153);
+            this.panel1.Size = new System.Drawing.Size(383, 153);
             this.panel1.TabIndex = 4;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(147, 97);
+            this.label11.Location = new System.Drawing.Point(143, 100);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(39, 13);
             this.label11.TabIndex = 7;
@@ -219,13 +227,13 @@
             this.mskCelular.Location = new System.Drawing.Point(137, 116);
             this.mskCelular.Mask = "(99) 00000-0000";
             this.mskCelular.Name = "mskCelular";
-            this.mskCelular.Size = new System.Drawing.Size(100, 20);
+            this.mskCelular.Size = new System.Drawing.Size(90, 20);
             this.mskCelular.TabIndex = 5;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 97);
+            this.label6.Location = new System.Drawing.Point(17, 100);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(27, 13);
             this.label6.TabIndex = 5;
@@ -246,13 +254,13 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(62, 171);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(339, 122);
+            this.panel2.Size = new System.Drawing.Size(383, 122);
             this.panel2.TabIndex = 5;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(213, 63);
+            this.label10.Location = new System.Drawing.Point(254, 66);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(34, 13);
             this.label10.TabIndex = 7;
@@ -260,17 +268,17 @@
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(210, 81);
+            this.txtBairro.Location = new System.Drawing.Point(251, 82);
             this.txtBairro.MaxLength = 30;
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(116, 20);
+            this.txtBairro.Size = new System.Drawing.Size(122, 20);
             this.txtBairro.TabIndex = 10;
             this.txtBairro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBairro_KeyPress);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(178, 63);
+            this.label9.Location = new System.Drawing.Point(178, 66);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(19, 13);
             this.label9.TabIndex = 5;
@@ -279,7 +287,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(17, 63);
+            this.label8.Location = new System.Drawing.Point(17, 66);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 13);
             this.label8.TabIndex = 5;
@@ -288,7 +296,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(207, 13);
+            this.label7.Location = new System.Drawing.Point(254, 13);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 5;
@@ -296,7 +304,7 @@
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(204, 29);
+            this.txtCidade.Location = new System.Drawing.Point(251, 30);
             this.txtCidade.MaxLength = 30;
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(122, 20);
@@ -315,7 +323,7 @@
             // 
             this.txtN.Location = new System.Drawing.Point(175, 82);
             this.txtN.Name = "txtN";
-            this.txtN.Size = new System.Drawing.Size(29, 20);
+            this.txtN.Size = new System.Drawing.Size(52, 20);
             this.txtN.TabIndex = 9;
             this.txtN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtN_KeyPress);
             // 
@@ -326,7 +334,7 @@
             this.panel3.Controls.Add(this.bntCancelar);
             this.panel3.Location = new System.Drawing.Point(62, 299);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(339, 75);
+            this.panel3.Size = new System.Drawing.Size(383, 75);
             this.panel3.TabIndex = 6;
             // 
             // btnSalvar
@@ -341,13 +349,55 @@
             // 
             // bntCancelar
             // 
-            this.bntCancelar.Location = new System.Drawing.Point(181, 20);
+            this.bntCancelar.Location = new System.Drawing.Point(228, 20);
             this.bntCancelar.Name = "bntCancelar";
             this.bntCancelar.Size = new System.Drawing.Size(145, 41);
             this.bntCancelar.TabIndex = 12;
             this.bntCancelar.Text = "Cancelar";
             this.bntCancelar.UseVisualStyleBackColor = true;
             this.bntCancelar.Click += new System.EventHandler(this.bntCancelar_Click);
+            // 
+            // rdbMasc
+            // 
+            this.rdbMasc.AutoSize = true;
+            this.rdbMasc.Location = new System.Drawing.Point(244, 116);
+            this.rdbMasc.Name = "rdbMasc";
+            this.rdbMasc.Size = new System.Drawing.Size(73, 17);
+            this.rdbMasc.TabIndex = 8;
+            this.rdbMasc.TabStop = true;
+            this.rdbMasc.Text = "Masculino";
+            this.rdbMasc.UseVisualStyleBackColor = true;
+            // 
+            // rdbFame
+            // 
+            this.rdbFame.AutoSize = true;
+            this.rdbFame.Location = new System.Drawing.Point(244, 133);
+            this.rdbFame.Name = "rdbFame";
+            this.rdbFame.Size = new System.Drawing.Size(67, 17);
+            this.rdbFame.TabIndex = 8;
+            this.rdbFame.TabStop = true;
+            this.rdbFame.Text = "Feminino";
+            this.rdbFame.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(247, 100);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(31, 13);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Sexo";
+            // 
+            // rdbOutros
+            // 
+            this.rdbOutros.AutoSize = true;
+            this.rdbOutros.Location = new System.Drawing.Point(317, 119);
+            this.rdbOutros.Name = "rdbOutros";
+            this.rdbOutros.Size = new System.Drawing.Size(56, 17);
+            this.rdbOutros.TabIndex = 8;
+            this.rdbOutros.TabStop = true;
+            this.rdbOutros.Text = "Outros";
+            this.rdbOutros.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -400,6 +450,10 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button bntCancelar;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.RadioButton rdbOutros;
+        private System.Windows.Forms.RadioButton rdbFame;
+        private System.Windows.Forms.RadioButton rdbMasc;
     }
 }
 

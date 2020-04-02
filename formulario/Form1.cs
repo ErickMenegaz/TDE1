@@ -16,7 +16,6 @@ namespace formulario
         {
             InitializeComponent();
         }
-
         private void bntCancelar_Click(object sender, EventArgs e)
         {
             txtNome.Text = "";
@@ -34,6 +33,7 @@ namespace formulario
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            string genero;
             string nome = txtNome.Text;
             string sobrenome = txtSobrenome.Text;
             string email = txtEmail.Text;
@@ -46,12 +46,29 @@ namespace formulario
             string n = txtN.Text;
             string bairro = txtBairro.Text;
 
+            if (rdbMasc.Checked)
+            {
+                genero = "Masculino";
+            }
+            else
+            {
+                if (rdbFame.Checked)
+                {
+                    genero = "Femenino";
+                }
+                else
+                {
+                    genero = "Outros";
+                }
+            }
+
             MessageBox.Show("Nome: " + nome + 
                             ", Sobrenome: " + sobrenome +
                             ", E-mail: " + email +
                             ", Data: " + data +
                             ", CPF: " + cpf +
                             ", Celular: " + celular +
+                            ", Sexo: " + genero + 
                             ", Estado: " + estado +
                             ", Cidade: " + cidade +
                             ", Endereço: " + endereço +
@@ -68,8 +85,7 @@ namespace formulario
             txtCidade.Text = "";
             txtEndereco.Text = "";
             txtN.Text = "";
-            txtBairro.Text = "";
-
+            txtBairro.Text = "";       
         }
 
         private void txtN_KeyPress(object sender, KeyPressEventArgs e)

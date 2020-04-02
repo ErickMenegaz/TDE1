@@ -57,6 +57,19 @@ namespace formulario
                             ", Endereço: " + endereço +
                             ", N°: " + n +
                             ", Bairro:" + bairro);
+
+            txtNome.Text = "";
+            txtSobrenome.Text = "";
+            txtEmail.Text = "";
+            mskDataNasc.Text = "";
+            mskCPF.Text = "";
+            mskCelular.Text = "";
+            cmbEstado.SelectedIndex = -1;
+            txtCidade.Text = "";
+            txtEndereco.Text = "";
+            txtN.Text = "";
+            txtBairro.Text = "";
+
         }
     }
 }

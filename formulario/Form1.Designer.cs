@@ -38,23 +38,23 @@
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtN = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtCidade = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtBairro = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.mskCelular = new System.Windows.Forms.MaskedTextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.mskCPF = new System.Windows.Forms.MaskedTextBox();
             this.mskDataNasc = new System.Windows.Forms.MaskedTextBox();
+            this.mskCPF = new System.Windows.Forms.MaskedTextBox();
+            this.mskCelular = new System.Windows.Forms.MaskedTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.txtN = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bntCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.bntCancelar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -67,6 +67,7 @@
             this.txtSobrenome.Name = "txtSobrenome";
             this.txtSobrenome.Size = new System.Drawing.Size(122, 20);
             this.txtSobrenome.TabIndex = 1;
+            this.txtSobrenome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSobrenome_KeyPress);
             // 
             // label1
             // 
@@ -84,6 +85,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(122, 20);
             this.txtNome.TabIndex = 0;
+            this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // label2
             // 
@@ -186,6 +188,49 @@
             this.panel1.Size = new System.Drawing.Size(339, 153);
             this.panel1.TabIndex = 4;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(147, 97);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(39, 13);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "Celular";
+            // 
+            // mskDataNasc
+            // 
+            this.mskDataNasc.Location = new System.Drawing.Point(204, 72);
+            this.mskDataNasc.Mask = "00/00/0000";
+            this.mskDataNasc.Name = "mskDataNasc";
+            this.mskDataNasc.Size = new System.Drawing.Size(100, 20);
+            this.mskDataNasc.TabIndex = 3;
+            this.mskDataNasc.ValidatingType = typeof(System.DateTime);
+            // 
+            // mskCPF
+            // 
+            this.mskCPF.Location = new System.Drawing.Point(14, 116);
+            this.mskCPF.Mask = "000.000.000-00";
+            this.mskCPF.Name = "mskCPF";
+            this.mskCPF.Size = new System.Drawing.Size(100, 20);
+            this.mskCPF.TabIndex = 4;
+            // 
+            // mskCelular
+            // 
+            this.mskCelular.Location = new System.Drawing.Point(137, 116);
+            this.mskCelular.Mask = "(99) 00000-0000";
+            this.mskCelular.Name = "mskCelular";
+            this.mskCelular.Size = new System.Drawing.Size(100, 20);
+            this.mskCelular.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(17, 97);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "CPF";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -204,55 +249,23 @@
             this.panel2.Size = new System.Drawing.Size(339, 122);
             this.panel2.TabIndex = 5;
             // 
-            // label6
+            // label10
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 97);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "CPF";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(213, 63);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(34, 13);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Bairro";
             // 
-            // txtN
+            // txtBairro
             // 
-            this.txtN.Location = new System.Drawing.Point(175, 82);
-            this.txtN.Name = "txtN";
-            this.txtN.Size = new System.Drawing.Size(29, 20);
-            this.txtN.TabIndex = 9;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(207, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Cidade";
-            // 
-            // txtEndereco
-            // 
-            this.txtEndereco.Location = new System.Drawing.Point(14, 82);
-            this.txtEndereco.MaxLength = 40;
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(155, 20);
-            this.txtEndereco.TabIndex = 8;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(17, 63);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 13);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Endereço";
-            // 
-            // txtCidade
-            // 
-            this.txtCidade.Location = new System.Drawing.Point(204, 29);
-            this.txtCidade.MaxLength = 30;
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(122, 20);
-            this.txtCidade.TabIndex = 7;
+            this.txtBairro.Location = new System.Drawing.Point(210, 81);
+            this.txtBairro.MaxLength = 30;
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(116, 20);
+            this.txtBairro.TabIndex = 10;
+            this.txtBairro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBairro_KeyPress);
             // 
             // label9
             // 
@@ -263,56 +276,48 @@
             this.label9.TabIndex = 5;
             this.label9.Text = "N°";
             // 
-            // txtBairro
+            // label8
             // 
-            this.txtBairro.Location = new System.Drawing.Point(210, 81);
-            this.txtBairro.MaxLength = 30;
-            this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(116, 20);
-            this.txtBairro.TabIndex = 10;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(17, 63);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 13);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Endereço";
             // 
-            // label10
+            // label7
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(213, 63);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(34, 13);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Bairro";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(207, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 13);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Cidade";
             // 
-            // mskCelular
+            // txtCidade
             // 
-            this.mskCelular.Location = new System.Drawing.Point(137, 116);
-            this.mskCelular.Mask = "(99) 00000-0000";
-            this.mskCelular.Name = "mskCelular";
-            this.mskCelular.Size = new System.Drawing.Size(100, 20);
-            this.mskCelular.TabIndex = 5;
+            this.txtCidade.Location = new System.Drawing.Point(204, 29);
+            this.txtCidade.MaxLength = 30;
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(122, 20);
+            this.txtCidade.TabIndex = 7;
+            this.txtCidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCidade_KeyPress);
             // 
-            // label11
+            // txtEndereco
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(147, 97);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(39, 13);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "Celular";
+            this.txtEndereco.Location = new System.Drawing.Point(14, 82);
+            this.txtEndereco.MaxLength = 40;
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(155, 20);
+            this.txtEndereco.TabIndex = 8;
             // 
-            // mskCPF
+            // txtN
             // 
-            this.mskCPF.Location = new System.Drawing.Point(14, 116);
-            this.mskCPF.Mask = "000.000.000-00";
-            this.mskCPF.Name = "mskCPF";
-            this.mskCPF.Size = new System.Drawing.Size(100, 20);
-            this.mskCPF.TabIndex = 4;
-            // 
-            // mskDataNasc
-            // 
-            this.mskDataNasc.Location = new System.Drawing.Point(204, 72);
-            this.mskDataNasc.Mask = "00/00/0000";
-            this.mskDataNasc.Name = "mskDataNasc";
-            this.mskDataNasc.Size = new System.Drawing.Size(100, 20);
-            this.mskDataNasc.TabIndex = 3;
-            this.mskDataNasc.ValidatingType = typeof(System.DateTime);
+            this.txtN.Location = new System.Drawing.Point(175, 82);
+            this.txtN.Name = "txtN";
+            this.txtN.Size = new System.Drawing.Size(29, 20);
+            this.txtN.TabIndex = 9;
+            this.txtN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtN_KeyPress);
             // 
             // panel3
             // 
@@ -324,16 +329,6 @@
             this.panel3.Size = new System.Drawing.Size(339, 75);
             this.panel3.TabIndex = 6;
             // 
-            // bntCancelar
-            // 
-            this.bntCancelar.Location = new System.Drawing.Point(181, 20);
-            this.bntCancelar.Name = "bntCancelar";
-            this.bntCancelar.Size = new System.Drawing.Size(145, 41);
-            this.bntCancelar.TabIndex = 12;
-            this.bntCancelar.Text = "Cancelar";
-            this.bntCancelar.UseVisualStyleBackColor = true;
-            this.bntCancelar.Click += new System.EventHandler(this.bntCancelar_Click);
-            // 
             // btnSalvar
             // 
             this.btnSalvar.Location = new System.Drawing.Point(14, 20);
@@ -343,6 +338,16 @@
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // bntCancelar
+            // 
+            this.bntCancelar.Location = new System.Drawing.Point(181, 20);
+            this.bntCancelar.Name = "bntCancelar";
+            this.bntCancelar.Size = new System.Drawing.Size(145, 41);
+            this.bntCancelar.TabIndex = 12;
+            this.bntCancelar.Text = "Cancelar";
+            this.bntCancelar.UseVisualStyleBackColor = true;
+            this.bntCancelar.Click += new System.EventHandler(this.bntCancelar_Click);
             // 
             // Form1
             // 

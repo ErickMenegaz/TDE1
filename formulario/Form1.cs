@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace formulario
 {
-    public partial class Form1 : Form
+    public partial class frmCadastro : Form
     {
-        public Form1()
+        public frmCadastro()
         {
             InitializeComponent();
         }

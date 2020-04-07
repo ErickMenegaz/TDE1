@@ -1,6 +1,6 @@
 ﻿namespace formulario
 {
-    partial class Form1
+    partial class frmCadastro
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -38,12 +38,18 @@
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.rdbOutros = new System.Windows.Forms.RadioButton();
+            this.rdbFame = new System.Windows.Forms.RadioButton();
+            this.rdbMasc = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.mskDataNasc = new System.Windows.Forms.MaskedTextBox();
             this.mskCPF = new System.Windows.Forms.MaskedTextBox();
             this.mskCelular = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cmbCivil = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -55,12 +61,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.bntCancelar = new System.Windows.Forms.Button();
-            this.rdbMasc = new System.Windows.Forms.RadioButton();
-            this.rdbFame = new System.Windows.Forms.RadioButton();
-            this.label12 = new System.Windows.Forms.Label();
-            this.rdbOutros = new System.Windows.Forms.RadioButton();
-            this.cmbCivil = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -198,6 +198,48 @@
             this.panel1.Size = new System.Drawing.Size(383, 153);
             this.panel1.TabIndex = 4;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(247, 100);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(31, 13);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Sexo";
+            // 
+            // rdbOutros
+            // 
+            this.rdbOutros.AutoSize = true;
+            this.rdbOutros.Location = new System.Drawing.Point(317, 119);
+            this.rdbOutros.Name = "rdbOutros";
+            this.rdbOutros.Size = new System.Drawing.Size(56, 17);
+            this.rdbOutros.TabIndex = 8;
+            this.rdbOutros.TabStop = true;
+            this.rdbOutros.Text = "Outros";
+            this.rdbOutros.UseVisualStyleBackColor = true;
+            // 
+            // rdbFame
+            // 
+            this.rdbFame.AutoSize = true;
+            this.rdbFame.Location = new System.Drawing.Point(244, 133);
+            this.rdbFame.Name = "rdbFame";
+            this.rdbFame.Size = new System.Drawing.Size(67, 17);
+            this.rdbFame.TabIndex = 8;
+            this.rdbFame.TabStop = true;
+            this.rdbFame.Text = "Feminino";
+            this.rdbFame.UseVisualStyleBackColor = true;
+            // 
+            // rdbMasc
+            // 
+            this.rdbMasc.AutoSize = true;
+            this.rdbMasc.Location = new System.Drawing.Point(244, 116);
+            this.rdbMasc.Name = "rdbMasc";
+            this.rdbMasc.Size = new System.Drawing.Size(73, 17);
+            this.rdbMasc.TabIndex = 8;
+            this.rdbMasc.TabStop = true;
+            this.rdbMasc.Text = "Masculino";
+            this.rdbMasc.UseVisualStyleBackColor = true;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -260,6 +302,28 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(383, 122);
             this.panel2.TabIndex = 5;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(143, 13);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(61, 13);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "Estado civil";
+            // 
+            // cmbCivil
+            // 
+            this.cmbCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCivil.FormattingEnabled = true;
+            this.cmbCivil.Items.AddRange(new object[] {
+            "Solteiro/a ",
+            "Casado/a",
+            "Viuvo/a"});
+            this.cmbCivil.Location = new System.Drawing.Point(141, 29);
+            this.cmbCivil.Name = "cmbCivil";
+            this.cmbCivil.Size = new System.Drawing.Size(104, 21);
+            this.cmbCivil.TabIndex = 7;
             // 
             // label10
             // 
@@ -361,71 +425,7 @@
             this.bntCancelar.UseVisualStyleBackColor = true;
             this.bntCancelar.Click += new System.EventHandler(this.bntCancelar_Click);
             // 
-            // rdbMasc
-            // 
-            this.rdbMasc.AutoSize = true;
-            this.rdbMasc.Location = new System.Drawing.Point(244, 116);
-            this.rdbMasc.Name = "rdbMasc";
-            this.rdbMasc.Size = new System.Drawing.Size(73, 17);
-            this.rdbMasc.TabIndex = 8;
-            this.rdbMasc.TabStop = true;
-            this.rdbMasc.Text = "Masculino";
-            this.rdbMasc.UseVisualStyleBackColor = true;
-            // 
-            // rdbFame
-            // 
-            this.rdbFame.AutoSize = true;
-            this.rdbFame.Location = new System.Drawing.Point(244, 133);
-            this.rdbFame.Name = "rdbFame";
-            this.rdbFame.Size = new System.Drawing.Size(67, 17);
-            this.rdbFame.TabIndex = 8;
-            this.rdbFame.TabStop = true;
-            this.rdbFame.Text = "Feminino";
-            this.rdbFame.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(247, 100);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(31, 13);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "Sexo";
-            // 
-            // rdbOutros
-            // 
-            this.rdbOutros.AutoSize = true;
-            this.rdbOutros.Location = new System.Drawing.Point(317, 119);
-            this.rdbOutros.Name = "rdbOutros";
-            this.rdbOutros.Size = new System.Drawing.Size(56, 17);
-            this.rdbOutros.TabIndex = 8;
-            this.rdbOutros.TabStop = true;
-            this.rdbOutros.Text = "Outros";
-            this.rdbOutros.UseVisualStyleBackColor = true;
-            // 
-            // cmbCivil
-            // 
-            this.cmbCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCivil.FormattingEnabled = true;
-            this.cmbCivil.Items.AddRange(new object[] {
-            "Solteiro/a ",
-            "Casado/a",
-            "Viuvo/a"});
-            this.cmbCivil.Location = new System.Drawing.Point(141, 29);
-            this.cmbCivil.Name = "cmbCivil";
-            this.cmbCivil.Size = new System.Drawing.Size(104, 21);
-            this.cmbCivil.TabIndex = 7;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(143, 13);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 13);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Estado civil";
-            // 
-            // Form1
+            // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -436,8 +436,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

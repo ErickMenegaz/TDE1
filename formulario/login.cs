@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace formulario
 {
-    public partial class login : Form
+    public partial class Login : Form
     {
-        public login()
+        public Login()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace formulario
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(txtUser.Text == "" || txtPass.Text == "")
+            if (txtUser.Text == "" || txtPass.Text == "")
             {
                 MessageBox.Show("Campos Obrigatórios");
             }

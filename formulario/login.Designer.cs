@@ -1,6 +1,6 @@
 ﻿namespace formulario
 {
-    partial class login
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -39,23 +39,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(103, 128);
+            this.label1.Location = new System.Drawing.Point(64, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "User/E-mail";
+            this.label1.Text = "User/Name";
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(106, 144);
+            this.txtUser.Location = new System.Drawing.Point(67, 109);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(162, 20);
-            this.txtUser.TabIndex = 1;
+            this.txtUser.Size = new System.Drawing.Size(156, 20);
+            this.txtUser.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(103, 192);
+            this.label2.Location = new System.Drawing.Point(64, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 0;
@@ -63,51 +63,51 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(106, 208);
+            this.txtPass.Location = new System.Drawing.Point(67, 155);
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(162, 20);
+            this.txtPass.Size = new System.Drawing.Size(156, 20);
             this.txtPass.TabIndex = 1;
             // 
             // btnClose
             // 
             this.btnClose.Image = global::formulario.Properties.Resources.unprotected__1_;
-            this.btnClose.Location = new System.Drawing.Point(194, 262);
+            this.btnClose.Location = new System.Drawing.Point(148, 198);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(74, 42);
-            this.btnClose.TabIndex = 2;
+            this.btnClose.Size = new System.Drawing.Size(75, 48);
+            this.btnClose.TabIndex = 3;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnLogin
             // 
-            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogin.Image = global::formulario.Properties.Resources.user__1_;
-            this.btnLogin.Location = new System.Drawing.Point(106, 262);
+            this.btnLogin.Location = new System.Drawing.Point(67, 198);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(74, 42);
+            this.btnLogin.Size = new System.Drawing.Size(75, 48);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // login
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 412);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(305, 353);
+            this.ControlBox = false;
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.DoubleBuffered = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "login";
+            this.Name = "Login";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "login";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,9 +117,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnClose;
     }
 }

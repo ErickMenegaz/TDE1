@@ -16,6 +16,7 @@ namespace formulario
         {
             InitializeComponent();
         }
+
         private void bntCancelar_Click(object sender, EventArgs e)
         {
             txtNome.Text = "";
@@ -25,7 +26,6 @@ namespace formulario
             mskCPF.Text = "";
             mskCelular.Text = "";
             cmbEstado.SelectedIndex = -1;
-            cmbCivil.SelectedIndex = -1;
             txtCidade.Text = "";
             txtEndereco.Text = "";
             txtN.Text = "";
@@ -76,7 +76,7 @@ namespace formulario
                             "Cidade: " + cidade + "\n" +
                             "Endereço: " + endereço + "\n" +
                             "N°: " + n + "\n" +
-                            "Bairro:" + bairro + "\n" );
+                            "Bairro:" + bairro + "\n");
 
             txtNome.Text = "";
             txtSobrenome.Text = "";
@@ -89,7 +89,7 @@ namespace formulario
             txtCidade.Text = "";
             txtEndereco.Text = "";
             txtN.Text = "";
-            txtBairro.Text = "";       
+            txtBairro.Text = "";
         }
 
         private void txtN_KeyPress(object sender, KeyPressEventArgs e)

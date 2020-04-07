@@ -24,23 +24,15 @@ namespace formulario
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text == "" || txtPass.Text == "")
-            {
-                MessageBox.Show("Campos Obrigatórios");
-            }
-            else
-            {
-                if (txtUser.Text == "erick" && txtPass.Text == "menegaz")
-                {
-                    frmCadastro frm = new frmCadastro();
-                    frm.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Login falso");
-                }
-            }
+
+        }
+
+        private void lblCadastre_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmCadastro frm = new frmCadastro();
+            frm.Closed += (s, args) => this.Close();
+            frm.Show();
         }
     }
 }

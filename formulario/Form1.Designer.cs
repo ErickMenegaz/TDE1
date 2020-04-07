@@ -60,7 +60,10 @@
             this.txtN = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.bntCancelar = new System.Windows.Forms.Button();
+            this.bntLimpar = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -120,11 +123,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(204, 56);
+            this.label4.Location = new System.Drawing.Point(302, 56);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 13);
+            this.label4.Size = new System.Drawing.Size(89, 13);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Data Nacimento";
+            this.label4.Text = "Data Nascimento";
             // 
             // cmbEstado
             // 
@@ -161,7 +164,7 @@
             this.cmbEstado.Location = new System.Drawing.Point(14, 29);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(121, 21);
-            this.cmbEstado.TabIndex = 6;
+            this.cmbEstado.TabIndex = 7;
             // 
             // label5
             // 
@@ -174,8 +177,10 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.txtSenha);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.rdbFame);
             this.panel1.Controls.Add(this.rdbOutro);
@@ -192,7 +197,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(62, 12);
+            this.panel1.Location = new System.Drawing.Point(34, 22);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(396, 153);
             this.panel1.TabIndex = 4;
@@ -250,11 +255,11 @@
             // 
             // mskDataNasc
             // 
-            this.mskDataNasc.Location = new System.Drawing.Point(204, 72);
+            this.mskDataNasc.Location = new System.Drawing.Point(302, 72);
             this.mskDataNasc.Mask = "00/00/0000";
             this.mskDataNasc.Name = "mskDataNasc";
             this.mskDataNasc.Size = new System.Drawing.Size(84, 20);
-            this.mskDataNasc.TabIndex = 3;
+            this.mskDataNasc.TabIndex = 4;
             this.mskDataNasc.ValidatingType = typeof(System.DateTime);
             // 
             // mskCPF
@@ -263,7 +268,7 @@
             this.mskCPF.Mask = "000.000.000-00";
             this.mskCPF.Name = "mskCPF";
             this.mskCPF.Size = new System.Drawing.Size(100, 20);
-            this.mskCPF.TabIndex = 4;
+            this.mskCPF.TabIndex = 5;
             // 
             // mskCelular
             // 
@@ -271,7 +276,7 @@
             this.mskCelular.Mask = "(99) 00000-0000";
             this.mskCelular.Name = "mskCelular";
             this.mskCelular.Size = new System.Drawing.Size(100, 20);
-            this.mskCelular.TabIndex = 5;
+            this.mskCelular.TabIndex = 6;
             // 
             // label6
             // 
@@ -297,7 +302,7 @@
             this.panel2.Controls.Add(this.txtN);
             this.panel2.Controls.Add(this.cmbEstado);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(62, 171);
+            this.panel2.Location = new System.Drawing.Point(34, 181);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(396, 122);
             this.panel2.TabIndex = 5;
@@ -313,7 +318,7 @@
             this.cmbCivil.Location = new System.Drawing.Point(142, 29);
             this.cmbCivil.Name = "cmbCivil";
             this.cmbCivil.Size = new System.Drawing.Size(103, 21);
-            this.cmbCivil.TabIndex = 7;
+            this.cmbCivil.TabIndex = 8;
             // 
             // label13
             // 
@@ -339,7 +344,7 @@
             this.txtBairro.MaxLength = 30;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(136, 20);
-            this.txtBairro.TabIndex = 11;
+            this.txtBairro.TabIndex = 12;
             // 
             // label9
             // 
@@ -374,7 +379,7 @@
             this.txtCidade.MaxLength = 30;
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(135, 20);
-            this.txtCidade.TabIndex = 8;
+            this.txtCidade.TabIndex = 9;
             // 
             // txtEndereco
             // 
@@ -382,45 +387,73 @@
             this.txtEndereco.MaxLength = 40;
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(155, 20);
-            this.txtEndereco.TabIndex = 9;
+            this.txtEndereco.TabIndex = 10;
             // 
             // txtN
             // 
             this.txtN.Location = new System.Drawing.Point(182, 82);
             this.txtN.Name = "txtN";
             this.txtN.Size = new System.Drawing.Size(62, 20);
-            this.txtN.TabIndex = 10;
+            this.txtN.TabIndex = 11;
             this.txtN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtN_KeyPress);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel3.Controls.Add(this.btnVoltar);
             this.panel3.Controls.Add(this.btnSalvar);
-            this.panel3.Controls.Add(this.bntCancelar);
-            this.panel3.Location = new System.Drawing.Point(62, 299);
+            this.panel3.Controls.Add(this.bntLimpar);
+            this.panel3.Location = new System.Drawing.Point(34, 309);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(396, 75);
             this.panel3.TabIndex = 6;
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(14, 20);
+            this.btnSalvar.Location = new System.Drawing.Point(11, 20);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(145, 41);
-            this.btnSalvar.TabIndex = 12;
+            this.btnSalvar.Size = new System.Drawing.Size(121, 41);
+            this.btnSalvar.TabIndex = 13;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // bntCancelar
+            // bntLimpar
             // 
-            this.bntCancelar.Location = new System.Drawing.Point(241, 20);
-            this.bntCancelar.Name = "bntCancelar";
-            this.bntCancelar.Size = new System.Drawing.Size(145, 41);
-            this.bntCancelar.TabIndex = 13;
-            this.bntCancelar.Text = "Cancelar";
-            this.bntCancelar.UseVisualStyleBackColor = true;
-            this.bntCancelar.Click += new System.EventHandler(this.bntCancelar_Click);
+            this.bntLimpar.Location = new System.Drawing.Point(138, 20);
+            this.bntLimpar.Name = "bntLimpar";
+            this.bntLimpar.Size = new System.Drawing.Size(121, 41);
+            this.bntLimpar.TabIndex = 14;
+            this.bntLimpar.Text = "Limpar";
+            this.bntLimpar.UseVisualStyleBackColor = true;
+            this.bntLimpar.Click += new System.EventHandler(this.bntLimpar_Click);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Location = new System.Drawing.Point(265, 20);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(121, 41);
+            this.btnVoltar.TabIndex = 15;
+            this.btnVoltar.Text = "Voltar ";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(204, 72);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(92, 20);
+            this.txtSenha.TabIndex = 3;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(204, 55);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(38, 13);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "Senha";
             // 
             // frmCadastro
             // 
@@ -428,12 +461,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::formulario.Properties.Resources._1068341;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(476, 389);
+            this.ClientSize = new System.Drawing.Size(476, 420);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "frmCadastro";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -472,13 +509,16 @@
         private System.Windows.Forms.MaskedTextBox mskDataNasc;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Button bntCancelar;
+        private System.Windows.Forms.Button bntLimpar;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RadioButton rdbFame;
         private System.Windows.Forms.RadioButton rdbOutro;
         private System.Windows.Forms.RadioButton rdbMasc;
         private System.Windows.Forms.ComboBox cmbCivil;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtSenha;
     }
 }
 

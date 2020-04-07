@@ -17,15 +17,17 @@ namespace formulario
             InitializeComponent();
         }
 
-        private void bntCancelar_Click(object sender, EventArgs e)
+        private void bntLimpar_Click(object sender, EventArgs e)
         {
             txtNome.Text = "";
             txtSobrenome.Text = "";
             txtEmail.Text = "";
+            txtSenha.Text = "";
             mskDataNasc.Text = "";
             mskCPF.Text = "";
             mskCelular.Text = "";
             cmbEstado.SelectedIndex = -1;
+            cmbCivil.SelectedIndex = -1;
             txtCidade.Text = "";
             txtEndereco.Text = "";
             txtN.Text = "";
@@ -38,6 +40,7 @@ namespace formulario
             string nome = txtNome.Text;
             string sobrenome = txtSobrenome.Text;
             string email = txtEmail.Text;
+            string senha = txtSenha.Text;
             string data = mskDataNasc.Text;
             string cpf = mskCPF.Text;
             string celular = mskCelular.Text;
@@ -67,6 +70,7 @@ namespace formulario
             MessageBox.Show("Nome: " + nome + "\n" +
                             "Sobrenome: " + sobrenome + "\n" +
                             "E-mail: " + email + "\n" +
+                            "Senha: " + senha + "\n" +
                             "Data: " + data + "\n" +
                             "CPF: " + cpf + "\n" +
                             "Celular: " + celular + "\n" +
@@ -81,6 +85,7 @@ namespace formulario
             txtNome.Text = "";
             txtSobrenome.Text = "";
             txtEmail.Text = "";
+            txtSenha.Text = "";
             mskDataNasc.Text = "";
             mskCPF.Text = "";
             mskCelular.Text = "";
@@ -130,6 +135,14 @@ namespace formulario
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login frm = new Login();
+            frm.Closed += (s, args) => this.Close();
+            frm.Show();
         }
     }
 }
